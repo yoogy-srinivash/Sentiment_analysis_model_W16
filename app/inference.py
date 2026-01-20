@@ -1,8 +1,11 @@
 import numpy as np
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
+import os
 
-MODEL_DIR = "./model/fine_tuned_model"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_DIR = os.path.join(BASE_DIR, "model", "fine_tuned_model")
+
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_DIR)

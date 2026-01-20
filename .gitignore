@@ -1,0 +1,55 @@
+# ===============================
+# Python bytecode / cache
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===============================
+# Virtual environments
+# ===============================
+.venv/
+venv/
+env/
+
+# ===============================
+# OS / Editor files
+# ===============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===============================
+# Jupyter Notebook checkpoints
+# ===============================
+.ipynb_checkpoints/
+
+# ===============================
+# Logs & temporary files
+# ===============================
+*.log
+*.tmp
+
+# ===============================
+# Model artifacts (large files)
+# ===============================
+model/fine_tuned_model/*
+!model/fine_tuned_model/README.md
+
+# ===============================
+# Experiment outputs
+# ===============================
+results/predictions.csv
+results/confusion_matrix.png
+
+# ===============================
+# Secrets (if any)
+# ===============================
+.env
+.env.*
+
+# ===============================
+# Gradio / runtime cache
+# ===============================
+gradio_cached_examples/
